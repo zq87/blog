@@ -1,0 +1,120 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-top: 20px;
+}
+
+.intro, .cert, .skills {
+  margin: 40px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h2, h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #444;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #6a1b9a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(106, 27, 154, 0.3);
+}
+
+.skill-item img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+
+body {
+  background: linear-gradient(135deg, #ffccf9, #a29bfe);
+  color: #2d3436;
+}
+
+.skill-item {
+  background: linear-gradient(145deg, #ffffff, #f3e8ff);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: linear-gradient(90deg, #ff69b4, #ff9a8b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cert-row, .skills-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cert-left, .cert-right, .skills-left, .skills-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 48%;
+}
